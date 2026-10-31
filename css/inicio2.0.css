@@ -1,0 +1,143 @@
+*{
+    font-family: 'League Spartan', sans-serif;
+    }
+
+
+
+.whatsapp{
+    width: 64px;
+    position: fixed;
+    bottom: 3%;
+    right: 7%;
+    z-index: 99999 !important;
+    transition: right 1s;
+    
+}
+
+    
+  
+#contenedor{
+    display: grid;
+    grid-template-areas:
+    "hdr"
+    "nav"
+    "sct"
+    "main"
+    "ftr";
+   
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#contenedor > header {
+    grid-area: hdr ;
+    
+}
+.logoppal{
+    width: 300px; height: auto ;
+    margin-left: 37%;
+    margin-right: 40%;
+    
+}
+
+
+#contenedor > nav{
+    grid-area: nav;
+    z-index: 99999 !important;
+
+}
+
+.navegador{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;}
+
+.dropdown-item:visited{color: black;}
+.dropdown-item:link{color: black;}
+.dropdown-item:hover{ color: black; background-color:#b3dee22f ;}
+
+#contenedor > section{
+    grid-area: sct;
+   ;
+}
+
+.nav-link{font-size: 17px;}
+.nav-link:hover{
+    color: black;
+    size: 20px; 
+    border-radius: 25px;
+    background-color:#b3dee22f ;
+}.nav-link:visited{color: black;}
+.nav-link:link{color: black;}
+
+#contenedor > main{
+    grid-area: main;
+
+}
+.catalogo:hover{color: black;}
+.catalogo:visited{color: black;}
+.catalogo:link{color:black;}
+
+
+.card-img-top{width: 100%; height: 300px ;
+ }
+.card-img-top:hover{opacity: 0.4;}
+
+
+#contenedor > footer {
+    grid-area: ftr;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 12px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.iconos{width: 20px;height: 20px; margin-left: 5px;margin-right: 5px;}
+
+.info{
+    display: flex;
+    flex-direction: row;
+ align-content: center;
+}
+.ftrr{margin-top: 4px;}
+
+.colorlink{color: white;}
+.redes{
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.perfilig{font-size: 17px;}
+a:hover{color: white;}
+a:visited{color: white;}
+a:link{color: white;}
+
+.copyright{margin-top: 15px;}
+.cpr{width: 15px;
+margin-right: 8px;}
+
+@media(max-width:500px){
+    #contenedor{margin-left: 5%; margin-right: 2%;}
+    .logoppal{margin-left: 15%;
+    }
+    .info{display: flex;
+    flex-direction: column;}
+    #contenedor > footer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .iconos{margin-left: 45%;}
+    .whatsapp{width: 50px;}
+
+}
